@@ -1,0 +1,15 @@
+This code defines a Mongoose schema and model for a `Product`. Here's a brief explanation:
+
+1. **Import Mongoose**: Mongoose is imported to interact with MongoDB.
+
+2. **Define Product Schema**: The `productSchema` outlines the structure of `Product` documents:
+   - `title`: Required string, trimmed.
+   - `price`: Required number, minimum value 0.
+   - `category`: Required string, trimmed.
+   - `inStock`: Boolean, defaults to `true`.
+
+3. **Create Product Model**: A `Product` model is created using `mongoose.model` based on the schema. This model represents the `products` collection in MongoDB and allows CRUD operations.
+
+4. **Export Model**: The `Product` model is exported for use in other parts of the application.
+
+This code effectively sets up a `Product` structure in MongoDB and provides the necessary model to interact with it.
